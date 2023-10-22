@@ -1,0 +1,172 @@
+body{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+}
+
+.sun{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: calc(50% - 100px/2);
+    left:calc(50% - 100px/2);
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.mercury{ 
+    --moveX: 65px;  
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 10px/2);
+    left:calc(50% - 10px/2);
+    background-color: red;
+    border-radius: 50%;
+    transform: translate(100px);
+    animation: solarsystem 3s linear 1s infinite;
+}
+
+.mars{
+    --moveX: 90px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: calc(50% - 15px/2);
+    left:calc(50% - 15px/2);
+    background-color: green;
+    border-radius: 50%;
+    transform: translate(150px);
+    animation: solarsystem 5s linear 1s infinite;
+}
+
+.earth{
+    --moveX: 120px;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: calc(50% - 27px/2);
+    left:calc(50% - 27px/2);
+    background-color: blue;
+    border-radius: 50%;
+    transform: translate(200px);
+    animation: solarsystem 7s linear 1s infinite;
+}
+
+.venus{
+    --moveX: 160px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 20px/2);
+    left:calc(50% - 20px/2);
+    background-color: rgb(224, 71, 176);
+    border-radius: 50%;
+    transform: translate(250px);
+    animation: solarsystem 10s linear 1s infinite;
+}
+
+@keyframes solarsystem {
+    from {transform: rotate(0deg) translate(var(--moveX));}
+    to {transform: rotate(360deg) translate(var(--moveX));}
+}
+
+.stars>div{
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.stars>div:nth-child(1){
+    top: 20px;
+    right: 50px;
+}
+
+.stars>div:nth-child(2){
+    top: 33px;
+    right: 41px;
+}
+
+.stars>div:nth-child(3){
+    top: 180px;
+    right: 180px;
+}
+
+
+.stars>div:nth-child(4){
+    top: 120px;
+    right: 160px;
+}
+
+.stars>div:nth-child(5){
+    top: 90px;
+    right: 500px;
+}
+
+.stars>div:nth-child(6){
+    top: 200px;
+    right: 50px;
+}
+
+.stars>div:nth-child(7){
+    top: 20px;
+    right: 500px;
+
+}.stars>div:nth-child(8){
+    top: 20px;
+    right: 590px;
+}
+
+
+.stars>div:nth-child(9){
+    top: 265px;
+    right: 26px;
+}
+.stars>div:nth-child(10){
+    top: 340px;
+    right: 250px;
+}
+.stars>div:nth-child(11){
+    top: 300px;
+    right: 750px;
+}
+.stars>div:nth-child(12){
+    top: 180px;
+    right: 50px;
+}
+.stars>div:nth-child(13){
+    top: 20px;
+    right: 250px;
+}
+.stars>div:nth-child(14){
+    top: 200px;
+    right: 650px;
+}
+.stars>div:nth-child(15){
+    top: 240px;
+    right: 620px;
+}
+.stars>div:nth-child(16){
+    top: 180px;
+    right: 60px;
+}
+.stars>div:nth-child(17){
+    top: 100px;
+    right: 700px;
+}
+.stars>div:nth-child(18){
+    top: 250px;
+    right: 104px;
+}
+
+.stars>div:nth-child(19){
+    top: 290px;
+    right: 50px;
+}
+
+.stars>div:nth-child(20){
+    top: 170px;
+    right: 630px;
+}
